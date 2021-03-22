@@ -1,7 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap");
 * {
     margin: 0;
     padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
 }
 body {
-    background-color: hsla(160, 90%, 40%, 0.3);
+    
+    background-color: hsla(160, 90%, 40%, 0.05);
+}
+h1 {
+    width: 65%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 2px solid darkgreen;
+    font-weight: 700;
+    text-align: center;
+}
+p {
+    font-weight: 300;
+}
+#intro {
+    margin: 20px 10%;
+}
+#paper {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    .pages {
+        background-color: burlywood;
+        padding: 0 10px 25px;
+        border: 1px solid darkolivegreen;
+        box-shadow: 0 7px 7px rgba(hsl(120, 60%, 10%), 0.3);
+        h2 {
+            display: block;
+            border-bottom: 1px solid darkgreen;
+            font-weight: 500;
+            text-align: center;
+            line-height: 2.5;
+        }
+        h3 {
+            font-weight: 300;
+            line-height: 3;
+        }
+    }
 }

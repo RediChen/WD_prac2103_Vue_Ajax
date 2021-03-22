@@ -9,9 +9,15 @@
 </head>
 
 <body>
-    <h1>複習</h1>
-    <p>內容內容</p>
-    <section id="paper"></section>
+    <h1>台中市主要觀光遊憩區人次年報</h1>
+    <p id="intro">練習用Vue的迴圈功能快速匯入json格式的多筆資料。</p>
+    <section id="paper">
+        <div class="pages" v-for="d in docs">
+            <h2>{{ d.Complex2Name }}</h2>
+            <h3>累積旅遊人次：{{ d.FValue }}</h3>
+            <p>最後更新時間：{{ d.ModifyTime }}</p>
+        </div>
+    </section>
 
     <!--  Vue 3 CDN  -->
     <script src="https://unpkg.com/vue@next"></script>
